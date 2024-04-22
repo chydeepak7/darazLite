@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/darazLite/static/css/main.b63fbde1.css",
+    "main.js": "/darazLite/static/js/main.6588e15a.js",
+    "static/js/453.8ab44547.chunk.js": "/darazLite/static/js/453.8ab44547.chunk.js",
+    "static/media/redux.cjs": "/darazLite/static/media/redux.7edfc461ab353f1712ab.cjs",
+    "index.html": "/darazLite/index.html",
+    "main.b63fbde1.css.map": "/darazLite/static/css/main.b63fbde1.css.map",
+    "main.6588e15a.js.map": "/darazLite/static/js/main.6588e15a.js.map",
+    "453.8ab44547.chunk.js.map": "/darazLite/static/js/453.8ab44547.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b63fbde1.css",
+    "static/js/main.6588e15a.js"
+  ]
+}
