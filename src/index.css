@@ -1,13 +1,327 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+  height: 100%;
+}
+body {
+  font-family: "Roboto";
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.navbar,
+.login,
+.log {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.sign {
+  color: #f5f5f5;
+}
+.logo,
+.login,
+.sign,
+.cart,
+.category_list {
+  cursor: pointer;
+}
+.container {
+  margin: 2rem 11rem;
+  /* border: 1px solid black; */
+  background-color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 0.6rem;
+  box-shadow: 0rem 0rem 0.2rem #aaabae;
+}
+.navbar {
+  padding: 0 11rem;
+  background-color: #fff;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar {
+  background-color: #f85606;
+  height: 5rem;
+  color: #fff;
+  align-items: center;
+  font-size: 0.9rem;
+}
+.login {
+  gap: 0.7rem;
+  position: relative;
+  color: white;
+}
+.log {
+  gap: 2rem;
+}
+.profile {
+  position: absolute;
+  right: 2.7rem;
+  top: -0.1rem;
+}
+.logo-font {
+  color: #fff;
+  font-size: 1.2rem;
+}
+.category {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.category_images {
+  height: 6rem;
+  width: 6rem;
+  object-fit: cover;
+  border-radius: 1.2rem;
+}
+.category_list {
+  gap: 0.8rem;
+  transition: 0.3s;
+}
+.category_list:hover {
+  color: #f85606;
+}
+.product {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+}
+.product_list {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  padding: 1.2rem;
+  overflow: hidden;
+  box-shadow: 0rem 0rem 0.2rem #aaabae;
+}
+.product_text {
+  padding: 0 0.5rem;
+  overflow: hidden;
+}
+.product_images {
+  height: 13rem;
+  width: 13rem;
+  object-fit: cover;
+}
+.product_screen {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.product_screen_details,
+.product_screen_delivery {
+  padding: 1rem 2rem;
+}
+.product_screen_details {
+  /* border: 1px solid black; */
+  width: 20rem;
+}
+.product_screen_delivery {
+  /* border: 1px solid black; */
+  width: 15rem;
+}
+.product_screen_image {
+  width: 25rem;
+}
+.product_screen_details_name {
+  font-size: 1.5rem;
+  font-weight: 400;
+  /* border: 1px solid black; */
+  height: 2rem;
+  overflow: hidden;
+}
+.product_screen_details_details {
+  margin: 1.3rem 0;
+  /* border: 1px solid black; */
+  padding: 1rem 1rem;
+  padding-bottom: 0;
+  width: 100%;
+  height: 15rem;
+  overflow: hidden;
+  color: #555555;
+  font-size: 0.9rem;
+}
+.price {
+  color: #f85606;
+  font-size: 1.3rem;
+}
+.product_screen_details_price {
+  font-size: 2rem;
+  padding: 0 1.5rem;
+}
+
+.product_screen_delivery_price,
+.product_screen_delivery_stock {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* min-height: 85vh; */
+  color: #aaabae;
+}
+.button {
+  cursor: pointer;
+  margin-top: 1rem;
+  padding: 0.6rem 2.5rem;
+  font-weight: 300;
+  background-color: #101010;
+  color: #fff;
+  border: none;
+  border-radius: 1rem;
+}
+
+/* cart */
+.cart {
+  cursor: default;
+}
+.cart_list {
+  margin: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.cart_list_image {
+  height: 4rem;
+}
+.cart_button {
+  margin-top: -1rem;
+  padding: 0rem;
+  height: 2rem;
+  width: 2rem;
+}
+.trash {
+  /* font-size: 0.8rem; */
+  padding: 0;
+  /* color: #000; */
+  /* border: none; */
+}
+
+/* login-------------------------- */
+
+.loginbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: default;
+}
+
+.email,
+.password {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.inputField {
+  padding: 1rem;
+}
+
+.belowlogin {
+  margin: 1rem;
+}
+.red {
+  color: red;
+}
+
+/* profile====----------------- */
+
+.profile_container {
+  display: flex;
+  flex-direction: row;
+  gap: 15rem;
+}
+
+.placeorder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* padding: 2rem; */
+}
+.left {
+  width: 50%;
+}
+thead {
+  display: flex;
+  flex-direction: row;
+  gap: 4.4rem;
+}
+tbody tr {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  /* gap: 3rem; */
+  margin: 2rem;
+}
+
+.order {
+  padding-right: 3rem;
+  /* padding: 3rem; */
+}
+.orderbtn {
+  position: absolute;
+  top: -100%;
+  left: 100%;
+}
+.userhead {
+  margin-left: 2rem;
+}
+.userhead th:nth-child(4) {
+  margin-left: 7rem;
+}
+.userlist {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+}
+.userlist td:nth-child(2) {
+  width: 4rem;
+}
+.userlist td:nth-child(3) {
+  width: 10rem;
+}
+
+.admin-items {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.orderlisthead {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  margin-left: 1.8rem;
+}
+
+.orderlisthead th:nth-child(4) {
+  margin-left: 3rem;
+}
+.orderlistitems {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
 }

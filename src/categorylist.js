@@ -1,0 +1,51 @@
+const category = [
+  {
+    id: "1",
+    name: "Electronics",
+    images: "/images/electronics.jpg",
+    details: "this is the test detaiai file lorem loeathis istest detaiai file lorem loeathis istest detaiai file lorem loeathis istest detaiai file lorem loeathis istest detaiai file lorem loeathis istest detaiai file lorem loeathis istest detaiai file lorem loeathis istest detaiai file lorem loeathis is the test file handwriting practine hehehehehee the ehteth eh teh shdf hsdfh shdf hsfh shdf hsdfh shdf hsdfh shfhs hfshd fhsdhf shdf hsh fsdh heehehehehe",
+    price: 100,
+    countInStock: 0,
+  },
+  {
+    id: "2",
+    name: "Sports",
+    images: "/images/sports.jpg",
+    details: "this is the test detaiai file lorem loeathis is the test file handwriting practine heheheheheheeheheheheehehehehe",
+    price: 100,
+    countInStock: 10,
+  },
+  {
+    id: "3",
+    name: "Motors",
+    images: "/images/motors.jpg",
+    details: "this is the test detaiai file lorem loeathis is the test file handwriting practine heheheheheheeheheheheehehehehe",
+    price: 100,
+    countInStock: 10,
+  },
+  {
+    id: "4",
+    name: "Groceries",
+    images: "/images/groceries.jpg",
+    details: "this is the test detaiai file lorem loeathis is the test file handwriting practine heheheheheheeheheheheehehehehe",
+    price: 100,
+    countInStock: 10,
+  },
+  {
+    id: "5",
+    name: "Toys",
+    images: "/images/toys.jpg",
+    details: "this is the test detaiai file lorem loeathis is the test file handwriting practine heheheheheheeheheheheehehehehe",
+    price: 100,
+    countInStock: 10,
+  },
+  {
+    id: "6",
+    name: "Clothes",
+    images: "/images/clothes.jpg",
+    details: "this is the test detaiai file lorem loeathis is the test file handwriting practine heheheheheheeheheheheehehehehe",
+    price: 100,
+    countInStock: 10,
+  },
+];
+export default category;
